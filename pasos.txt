@@ -1,0 +1,65 @@
+crear carpetas
+  services
+  components
+  models
+
+crear compoennte
+  ng g c components/header --skip-Tests
+  ng g c components/footer --skip-Tests
+  ng g c components/principal --skip-Tests
+  ng g c components/product-list --skip-Tests
+  ng g c components/product-item --skip-Tests
+  ng g c components/cart --skip-Tests
+  ng g c components/cart-item --skip-Tests
+  ng g c components/modal --skip-Tests
+
+crear clases en modelo
+  ng g class models/product --skip-Tests
+  ng g class models/cart-item --skip-Tests
+
+
+crear servicios en services
+  ng g s services/product --skip-Tests
+  ng g s services/message --skip-Tests
+  ng g s services/storage --skip-Tests
+
+
+agregar bootstrap y font-awesome cdn en index
+
+
+crear cuenta paypal
+
+instalar paypal
+  npm i ngx-paypal
+
+  en app.module.ts
+    import { NgxPayPalModule } from 'ngx-paypal';
+      imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgxPayPalModule,
+        NgbModule
+      ],
+
+
+instalar ng-bootstrap
+  ng add @ng-bootstrap/ng-bootstrap@10
+
+    import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+      imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgxPayPalModule,
+        NgbModule
+      ],
+
+
+instalar spinner
+  npm i ngx-spinner
+    import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+    import { NgxSpinnerModule } from "ngx-spinner";
+
+    NgxSpinnerModule
+
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],

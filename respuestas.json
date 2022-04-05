@@ -1,0 +1,431 @@
+{
+  "fundingSource": "paypal"
+}
+
+
+{
+  "orderID": "3TF497787U5958450",
+  "payerID": "DCUSWW693SR4N",
+  "paymentID": null,
+  "billingToken": null,
+  "facilitatorAccessToken": "A21AAKrU1JtnNFZSYUO0XleRRvg61_KBZI1vOTO_x3RGQMW3PXEdZ20KnPNSszRtwhx-Q534LBbULCDzlEBOVTzJtsOktMvzw"
+}
+
+{
+  "id": "3TF497787U5958450",
+  "intent": "CAPTURE",
+  "status": "APPROVED",
+  "purchase_units": [
+    {
+      "reference_id": "default",
+      "amount": {
+        "currency_code": "EUR",
+        "value": "9.99",
+        "breakdown": {
+          "item_total": {
+            "currency_code": "EUR",
+            "value": "9.99"
+          }
+        }
+      },
+      "payee": {
+        "email_address": "sb-upyis15134343@business.example.com",
+        "merchant_id": "6CAHSE3JVDJZL"
+      },
+      "items": [
+        {
+          "name": "Enterprise Subscription",
+          "unit_amount": {
+            "currency_code": "EUR",
+            "value": "9.99"
+          },
+          "quantity": "1",
+          "category": "DIGITAL_GOODS"
+        }
+      ],
+      "shipping": {
+        "name": {
+          "full_name": "John Doe"
+        },
+        "address": {
+          "address_line_1": "Calle Juarez 1",
+          "address_line_2": "Col. Cuauhtemoc",
+          "admin_area_2": "Miguel Hidalgo",
+          "admin_area_1": "Ciudad de Mexico",
+          "postal_code": "11580",
+          "country_code": "MX"
+        }
+      }
+    }
+  ],
+  "payer": {
+    "name": {
+      "given_name": "John",
+      "surname": "Doe"
+    },
+    "email_address": "sb-um3o4715101116@personal.example.com",
+    "payer_id": "DCUSWW693SR4N",
+    "address": {
+      "country_code": "MX"
+    }
+  },
+  "create_time": "2022-04-04T23:26:39Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v2/checkout/orders/3TF497787U5958450",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v2/checkout/orders/3TF497787U5958450",
+      "rel": "update",
+      "method": "PATCH"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v2/checkout/orders/3TF497787U5958450/capture",
+      "rel": "capture",
+      "method": "POST"
+    }
+  ]
+}
+
+
+{
+  "id": "3TF497787U5958450",
+  "intent": "CAPTURE",
+  "status": "COMPLETED",
+  "purchase_units": [
+    {
+      "reference_id": "default",
+      "amount": {
+        "currency_code": "EUR",
+        "value": "9.99",
+        "breakdown": {
+          "item_total": {
+            "currency_code": "EUR",
+            "value": "9.99"
+          },
+          "shipping": {
+            "currency_code": "EUR",
+            "value": "0.00"
+          },
+          "handling": {
+            "currency_code": "EUR",
+            "value": "0.00"
+          },
+          "insurance": {
+            "currency_code": "EUR",
+            "value": "0.00"
+          },
+          "shipping_discount": {
+            "currency_code": "EUR",
+            "value": "0.00"
+          }
+        }
+      },
+      "payee": {
+        "email_address": "sb-upyis15134343@business.example.com",
+        "merchant_id": "6CAHSE3JVDJZL"
+      },
+      "description": "Enterprise Subscription",
+      "soft_descriptor": "PAYPAL *TEST STORE",
+      "items": [
+        {
+          "name": "Enterprise Subscription",
+          "unit_amount": {
+            "currency_code": "EUR",
+            "value": "9.99"
+          },
+          "tax": {
+            "currency_code": "EUR",
+            "value": "0.00"
+          },
+          "quantity": "1"
+        }
+      ],
+      "shipping": {
+        "name": {
+          "full_name": "John Doe"
+        },
+        "address": {
+          "address_line_1": "Calle Juarez 1",
+          "address_line_2": "Col. Cuauhtemoc",
+          "admin_area_2": "Miguel Hidalgo",
+          "admin_area_1": "Ciudad de Mexico",
+          "postal_code": "11580",
+          "country_code": "MX"
+        }
+      },
+      "payments": {
+        "captures": [
+          {
+            "id": "24G23821H1856400B",
+            "status": "COMPLETED",
+            "amount": {
+              "currency_code": "EUR",
+              "value": "9.99"
+            },
+            "final_capture": true,
+            "seller_protection": {
+              "status": "ELIGIBLE",
+              "dispute_categories": [
+                "ITEM_NOT_RECEIVED",
+                "UNAUTHORIZED_TRANSACTION"
+              ]
+            },
+            "create_time": "2022-04-04T23:29:54Z",
+            "update_time": "2022-04-04T23:29:54Z"
+          }
+        ]
+      }
+    }
+  ],
+  "payer": {
+    "name": {
+      "given_name": "John",
+      "surname": "Doe"
+    },
+    "email_address": "sb-um3o4715101116@personal.example.com",
+    "payer_id": "DCUSWW693SR4N",
+    "address": {
+      "country_code": "MX"
+    }
+  },
+  "create_time": "2022-04-04T23:26:39Z",
+  "update_time": "2022-04-04T23:29:54Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v2/checkout/orders/3TF497787U5958450",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}
+
+
+
+
+
+{
+  "id": "3PK03615MC631771G",
+  "intent": "CAPTURE",
+  "status": "COMPLETED",
+  "purchase_units": [
+    {
+      "reference_id": "default",
+      "amount": {
+        "currency_code": "MXN",
+        "value": "1042.00",
+        "breakdown": {
+          "item_total": {
+            "currency_code": "MXN",
+            "value": "1042.00"
+          },
+          "shipping": {
+            "currency_code": "MXN",
+            "value": "0.00"
+          },
+          "handling": {
+            "currency_code": "MXN",
+            "value": "0.00"
+          },
+          "insurance": {
+            "currency_code": "MXN",
+            "value": "0.00"
+          },
+          "shipping_discount": {
+            "currency_code": "MXN",
+            "value": "0.00"
+          }
+        }
+      },
+      "payee": {
+        "email_address": "sb-upyis15134343@business.example.com",
+        "merchant_id": "6CAHSE3JVDJZL"
+      },
+      "description": "FIFA 22",
+      "soft_descriptor": "PAYPAL *TEST STORE",
+      "items": [
+        {
+          "name": "FIFA 22",
+          "unit_amount": {
+            "currency_code": "MXN",
+            "value": "521.00"
+          },
+          "tax": {
+            "currency_code": "MXN",
+            "value": "0.00"
+          },
+          "quantity": "2"
+        }
+      ],
+      "shipping": {
+        "name": {
+          "full_name": "John Doe"
+        },
+        "address": {
+          "address_line_1": "Calle Juarez 1",
+          "address_line_2": "Col. Cuauhtemoc",
+          "admin_area_2": "Miguel Hidalgo",
+          "admin_area_1": "Ciudad de Mexico",
+          "postal_code": "11580",
+          "country_code": "MX"
+        }
+      },
+      "payments": {
+        "captures": [
+          {
+            "id": "0E983466KX5073448",
+            "status": "COMPLETED",
+            "amount": {
+              "currency_code": "MXN",
+              "value": "1042.00"
+            },
+            "final_capture": true,
+            "seller_protection": {
+              "status": "ELIGIBLE",
+              "dispute_categories": [
+                "ITEM_NOT_RECEIVED",
+                "UNAUTHORIZED_TRANSACTION"
+              ]
+            },
+            "create_time": "2022-04-05T00:27:37Z",
+            "update_time": "2022-04-05T00:27:37Z"
+          }
+        ]
+      }
+    }
+  ],
+  "payer": {
+    "name": {
+      "given_name": "John",
+      "surname": "Doe"
+    },
+    "email_address": "sb-um3o4715101116@personal.example.com",
+    "payer_id": "DCUSWW693SR4N",
+    "address": {
+      "country_code": "MX"
+    }
+  },
+  "create_time": "2022-04-05T00:27:25Z",
+  "update_time": "2022-04-05T00:27:37Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v2/checkout/orders/3PK03615MC631771G",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}
+// card
+{
+  "id": "5S570680HC680304C",
+  "intent": "CAPTURE",
+  "status": "COMPLETED",
+  "purchase_units": [
+    {
+      "reference_id": "default",
+      "amount": {
+        "currency_code": "MXN",
+        "value": "521.00",
+        "breakdown": {
+          "item_total": {
+            "currency_code": "MXN",
+            "value": "521.00"
+          },
+          "shipping": {
+            "currency_code": "MXN",
+            "value": "0.00"
+          },
+          "handling": {
+            "currency_code": "MXN",
+            "value": "0.00"
+          },
+          "insurance": {
+            "currency_code": "MXN",
+            "value": "0.00"
+          },
+          "shipping_discount": {
+            "currency_code": "MXN",
+            "value": "0.00"
+          }
+        }
+      },
+      "payee": {
+        "email_address": "sb-upyis15134343@business.example.com",
+        "merchant_id": "6CAHSE3JVDJZL"
+      },
+      "description": "FIFA 22",
+      "soft_descriptor": "PAYPAL *TEST STORE",
+      "items": [
+        {
+          "name": "FIFA 22",
+          "unit_amount": {
+            "currency_code": "MXN",
+            "value": "521.00"
+          },
+          "tax": {
+            "currency_code": "MXN",
+            "value": "0.00"
+          },
+          "quantity": "1"
+        }
+      ],
+      "shipping": {
+        "name": {
+          "full_name": "Alan Hdez"
+        },
+        "address": {
+          "address_line_1": "MTz",
+          "address_line_2": "colonia",
+          "admin_area_2": "ciudad",
+          "admin_area_1": "HGO",
+          "postal_code": "42000",
+          "country_code": "MX"
+        }
+      },
+      "payments": {
+        "captures": [
+          {
+            "id": "2A852995KN795514W",
+            "status": "COMPLETED",
+            "amount": {
+              "currency_code": "MXN",
+              "value": "521.00"
+            },
+            "final_capture": true,
+            "seller_protection": {
+              "status": "ELIGIBLE",
+              "dispute_categories": [
+                "ITEM_NOT_RECEIVED",
+                "UNAUTHORIZED_TRANSACTION"
+              ]
+            },
+            "create_time": "2022-04-05T01:01:29Z",
+            "update_time": "2022-04-05T01:01:29Z"
+          }
+        ]
+      }
+    }
+  ],
+  "payer": {
+    "name": {
+      "given_name": "Alan",
+      "surname": "Hdez"
+    },
+    "email_address": "alan.maqueda@cajadepixeles.mx",
+    "payer_id": "5J2JY48ZAMCVC",
+    "address": {
+      "country_code": "MX"
+    }
+  },
+  "create_time": "2022-04-05T00:58:58Z",
+  "update_time": "2022-04-05T01:01:29Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v2/checkout/orders/5S570680HC680304C",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}
